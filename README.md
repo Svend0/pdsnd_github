@@ -19,6 +19,9 @@ chicago.csv
 new_york_city.csv
 washington.csv
 
+Some databases contain gender data and others do not. The program checks for the gender
+column and runs additional analysis if they are not present.
+
 ### Credits
 Udacity Course Notes:
 "Programming for Data Science with Python Nanodegree Program."
