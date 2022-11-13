@@ -9,7 +9,8 @@ Studing the Nanodegree;
 
 ### Description
 This project allows the user to select a database, and then run an analysis of the 
-Bikeshare data contained within it to understand the usage of bikes on a given day, month or all.
+Bikeshare data. It displays descriptive statistics of the data once a filter has been applied.
+This filter can be a day of the week (or all days) and a month (or all months).
 
 ### Files used
 bikeshare.py
