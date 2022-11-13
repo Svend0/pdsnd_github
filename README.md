@@ -1,17 +1,33 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-Include the date you created this project and README file.
+Created on the 13-Nov-22
 
-### Project Title
-Replace the Project Title
+### Bikeshare Data Analysis Project
 
 ### Description
-Describe what your project is about and what it does
+This project allows the user to select a database, and then run an analysis of the 
+Bikeshare data contained within it to understand the usage of bikes on a given day, month or all.
 
 ### Files used
-Include the files used
+bikeshare.py
+readme.md
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity Course Notes:
+"Programming for Data Science with Python Nanodegree Program."
 
+Books:
+
+    Chen, D.Y., 2018, Pandas for Everyone, Addison-Wesley. 
+    [Accessed via Kindle]
+
+    Matthes, E., 2019, Python Crash Course 2nd Edition, No starch Press, San Francisco,
+    [Accessed via Kindle]
+
+Websites:
+
+StackOverflow (https://www.stackoverflow.co)
+Pandas (https://pandas.pydata.org)
