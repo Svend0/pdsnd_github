@@ -1,6 +1,9 @@
 
 ### Date created
 Created on the 13-Nov-22
+by Svend White
+Studing the Nanodegree;
+"Programming for Data Science Nanodegree Program"
 
 ### Bikeshare Data Analysis Project
 
