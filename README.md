@@ -1,11 +1,11 @@
+### Project Name 
+Bikeshare Data Analysis Project
 
-### Date created
+### Project Information
 Created on the 13-Nov-22
 by Svend White
 Studing the Nanodegree;
 "Programming for Data Science Nanodegree Program"
-
-### Bikeshare Data Analysis Project
 
 ### Description
 This project allows the user to select a database, and then run an analysis of the 
