@@ -165,14 +165,10 @@ def load_data(city, month, day):
     
         #Convert Month and Day to integer and correct month and day number to align with database time assignments
     
-        month_int = int(month)
+        month_int = int(month)-1
     
-        month_int -= 1
+        day_int = int(day)-1
     
-        day_int = int(day)
-    
-        day_int -= 1
-
         dfb = dfa[((dfa.Month == month_int) & (dfa.DayOfWeek == day_int))] 
 
         print ('Here\'s a sneek preview of the data:\n', dfb.head(5))
@@ -187,10 +183,8 @@ def load_data(city, month, day):
     
         #Convert day to integer and correct day number to align with database time assignments
     
-        day_int = int(day)
+        day_int = int(day)-1
     
-        day_int -= 1
-
         dfb = dfa[(dfa.DayOfWeek == day_int)] 
 
         print ('Here\'s a sneek preview of the data:\n', dfb.head(5))
@@ -205,9 +199,7 @@ def load_data(city, month, day):
 
         #Convert month to integer and correct month number to align with database time assignments
         
-        month_int = int(month)
-    
-        month_int -= 1
+        month_int = int(month)-1
 
         dfb = dfa[(dfa.Month == month_int)] 
 
