@@ -9,6 +9,8 @@ print ('Please place python file in same directory as python data files. Thank y
 # Written by Svend White
 #
 # NB Please place python file in same diectory as python data files.
+#
+# As of 14-Nov-22 Using GitHub to control version
 
 def get_filters():
     """Asks user to specify a city, month, and day to analyze.
