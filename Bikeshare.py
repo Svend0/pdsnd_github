@@ -1,5 +1,8 @@
 import time
 import pandas as pd
+import numpy as np
+from tabulate import tabulate
+
 print ('Program Info:')
 print ('Your pandas version is: ',pd.__version__,' This file was created using pandas 1.4.2')
 print ('Please place python file in same directory as python data files. Thank you')
@@ -131,7 +134,7 @@ def load_data(city, month, day):
     
     # loaddf = ('C:/Users/svend/Python-Sandpit/BikeShare/'+citydb)
 
-    loaddf = (citydb)
+    loaddf = ('C:/Users/svend/Python-Sandpit/BikeShare/'+citydb)
     
     dfa = pd.read_csv(loaddf)
 
@@ -379,52 +382,21 @@ def view_data(df):
     end_row = 4
     
     more_rows = 'n'
-
-    #Display data in rows of 5 checking that maximum rows has not already been reached
     
-    while end_row < max_rows:
- 
-        print('-'*80)
-
-        more_rows = input('Would you like to step through the raw data? Enter (Y) Yes or (N) No: ')
+    i = 0
     
-        if more_rows.lower() == 'y':
-                    
-            if end_row >= max_rows:
-                
-                end_row = max_rows
+    while True:
+        
+        display_data = input('\nWould you like to see 5 lines of raw data? Enter (y) yes or (n) no.\n')
+        
+        if display_data.lower() != 'y':
             
-            print('\nDisplaying ',start_row,' to ',end_row,' of possible',max_rows,'.\n')
-                        
-            # For loop to display column headings and data from database in groups of 5
-            
-            for i in range(0,5):
-            
-                for j in range(0,10):
-                           
-                    row_id = start_row + i
-                    
-                    column_title = df.columns.values.tolist()
-                    
-                    output = df.iloc[(row_id),(j)]
-                            
-                    print(column_title[j],': ',output)
-                                        
-                print('\n')
-                    
-            start_row += 5
-            
-            end_row += 5
-                
-            if end_row >= max_rows:
-            
-                print("\nEnd of List\n")
-                    
-        else:
-            
-            print("Returning to Main Program")
-
             break
+            
+        print(tabulate(df.iloc[np.arange(0+i,5+i)], headers = "keys"))
+        
+        i+=5
+
     return
 
 def main():
